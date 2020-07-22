@@ -30,13 +30,14 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
+        helpText: 'Hi, I am Mridul Shukla. I am a second year B.Tech (ECE) student at VIT Chennai.'
         name: 'Mridul Shukla'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Type the name of the location in the search bar and hit ENTER to see the weather info of that location.',
         title: 'Help',
         name: 'Mridul Shukla'
     })
